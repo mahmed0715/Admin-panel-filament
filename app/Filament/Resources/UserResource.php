@@ -46,11 +46,11 @@ class UserResource extends Resource
                     ->password()
                     ->required()
                     ->maxLength(255),
-                Forms\Components\Textarea::make('two_factor_secret')
-                    ->maxLength(65535),
-                Forms\Componets\Textarea::make('two_factor_recovery_codes')
-                    ->maxLength(65535),
-                Forms\Components\DateTimePicker::make('two_factor_confirmed_at'),
+                // Forms\Components\Textarea::make('two_factor_secret')
+                    // ->maxLength(65535),
+                // Forms\Componets\Textarea::make('two_factor_recovery_codes')
+                    // ->maxLength(65535),
+                // Forms\Components\DateTimePicker::make('two_factor_confirmed_at'),
                 Forms\Components\TextInput::make('current_team_id'),
                 Forms\Components\TextInput::make('profile_photo_path')
                     ->maxLength(2048),
@@ -71,9 +71,9 @@ class UserResource extends Resource
                     ->dateTime(),
                 Tables\Columns\TextColumn::make('updated_at')
                     ->dateTime(),
-                Tables\Columns\TextColumn::make('two_factor_secret'),
-                Tables\Columns\TextColumn::make('two_factor_recovery_codes'),
-                Tables\Columns\TextColumn::make('two_factor_confirmed_at'),
+                // Tables\Columns\TextColumn::make('two_factor_secret'),
+                // Tables\Columns\TextColumn::make('two_factor_recovery_codes'),
+                // Tables\Columns\TextColumn::make('two_factor_confirmed_at'),
                 Tables\Columns\TextColumn::make('current_team_id'),
                 Tables\Columns\TextColumn::make('profile_photo_path'),
             ])
